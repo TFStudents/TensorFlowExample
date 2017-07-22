@@ -107,3 +107,23 @@ __init__(
     import_scope=None
 )
 ```
+
+- 实例
+```
+v1=tf.Variable(12)
+v2=tf.Variable(23)#定义一个变量
+init = tf.global_variables_initializer()#进去全部变量的初始化
+sess.run(init)
+x=tf.placeholder(tf.int32)
+a_line=v1*x+v2#使用和常量类似
+v3=sess.run(a_line,{x:[1,2]})
+print(v3)#[35 47]
+#重新赋值
+v1=tf.assign(v1,-2)
+v2=tf.assign(v2,3)
+add4=v1+v2
+v4=sess.run(add4)
+print(v4)#1
+
+```
+## END
