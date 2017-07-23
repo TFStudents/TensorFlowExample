@@ -59,9 +59,9 @@
 - [序列到序列模型](https://www.tensorflow.org/tutorials/seq2seq)
 - [大型线性模型](https://www.tensorflow.org/tutorials/linear)
 - [线性模型实例](https://www.tensorflow.org/tutorials/wide)
-- [深度学习](https://www.tensorflow.org/tutorials/wide_and_deep)
-- [Mandelbrot Set](https://www.tensorflow.org/tutorials/mandelbrot)	
-- [偏微分方程](https://www.tensorflow.org/tutorials/pdes)
+- [深度学习](https://www.tensorflow.org/tutorials/wide_and_deep)-[王凯-认领]  
+- [Mandelbrot Set](https://www.tensorflow.org/tutorials/mandelbrot)-[王凯-认领]   	
+- [偏微分方程](https://www.tensorflow.org/tutorials/pdes)-[王凯-认领]
 ## 其他
 - 一个DNN的分类例子
 介绍内容：构造一个四层的DNN，用Python读取一份分类数据，并feed给DNN。一步步解析每一行代码，包括每一个变量，每一个函数
