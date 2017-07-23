@@ -50,7 +50,7 @@
 ## 算法相关
 - [GPU的使用](https://www.tensorflow.org/tutorials/using_gpu)
 - [图片识别](https://www.tensorflow.org/tutorials/image_recognition)
-- [新分类的最终层](https://www.tensorflow.org/tutorials/image_retraining)
+- [迁移学习](https://www.tensorflow.org/tutorials/image_retraining)
 - 卷积神经网络
 	>  [创建](https://www.tensorflow.org/tutorials/layers)  
 	>  [高级](https://www.tensorflow.org/tutorials/deep_cnn)
