@@ -7,7 +7,7 @@ import tensorflow as tf
 ## 张量
 > 符号 Tensor   
 
-### 阶 rank 
+- 阶 rank 
 > 类似于维度 
 >  什么是张量？张量相当于表,又有点类似于树    
  <table >
@@ -63,7 +63,7 @@ import tensorflow as tf
  
   
     
-### 形状 Shape 
+- 形状 Shape 
 > 就是张量形状描述 ，长度是张量的阶数 
 <table>
   <tr>
@@ -88,7 +88,7 @@ import tensorflow as tf
         </tr>
 </table>
 
-### 数据类型 type
+- 数据类型 type
 > 支持所有python 支持的基础数据类型
 
 - 流图Graph 
