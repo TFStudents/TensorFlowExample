@@ -48,14 +48,14 @@
 > [图像化](https://www.tensorflow.org/get_started/graph_viz)   
 > [直方图](https://www.tensorflow.org/get_started/tensorboard_histograms)
 ## 算法相关
-- [GPU的使用](https://www.tensorflow.org/tutorials/using_gpu)
+- [GPU的使用](https://www.tensorflow.org/tutorials/using_gpu)[聂彬-认领]
 - [图片识别](https://www.tensorflow.org/tutorials/image_recognition)
-- [迁移学习](https://www.tensorflow.org/tutorials/image_retraining)
-- 卷积神经网络
-	>  [创建](https://www.tensorflow.org/tutorials/layers)  
+- [迁移学习](https://www.tensorflow.org/tutorials/image_retraining)-[魏杨-认领]
+- 卷积神经网络-[魏杨-认领]
+	>  [创建](https://www.tensorflow.org/tutorials/layers) 
 	>  [高级](https://www.tensorflow.org/tutorials/deep_cnn)
-- [词的向量化](https://www.tensorflow.org/tutorials/word2vec)
-- [循环神经网络](https://www.tensorflow.org/tutorials/recurrent)  
+- [词的向量化](https://www.tensorflow.org/tutorials/word2vec)[聂彬-认领]
+- [循环神经网络](https://www.tensorflow.org/tutorials/recurrent)[聂彬-认领]  
 - [序列到序列模型](https://www.tensorflow.org/tutorials/seq2seq)
 - [大型线性模型](https://www.tensorflow.org/tutorials/linear)
 - [线性模型实例](https://www.tensorflow.org/tutorials/wide)
