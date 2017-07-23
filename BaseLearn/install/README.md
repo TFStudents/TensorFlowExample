@@ -8,8 +8,8 @@ PYTHON_PATH=E:\Tools\Python35\Scripts;E:\Tools\Python35
 输入命令：pip3 install --upgrade tensorflow   
 3. 验证
 命令：import tensorflow as tf 
-a.No module named "pywrap_tensorflow"
+- a.No module named "pywrap_tensorflow"
 解决方案：下载https://www.microsoft.com/en-us/download/details.aspx?id=53587
-b.NameError: name 'core' is not defined
-c.NameError: name 'python' is not defined
-bc重启命令好久好了!!
+- b.NameError: name 'core' is not defined
+- c.NameError: name 'python' is not defined
+#### bc重启命令好久好了!!
