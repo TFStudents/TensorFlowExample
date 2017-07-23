@@ -15,10 +15,10 @@
 ## 基础
 [参考资料](https://www.tensorflow.org/programmers_guide)
 
-- [简单上手](https://www.tensorflow.org/get_started/get_started)-[聂彬完成]
+- [简单上手](https://www.tensorflow.org/get_started/get_started)-[聂彬完成]   
 > 外加 tensor，op，graph，session，feed_dict
 - 变量
-> [创建-初始化](https://www.tensorflow.org/programmers_guide/variables)[聂彬完成] 
+> [创建-初始化](https://www.tensorflow.org/programmers_guide/variables)-[聂彬完成]   
 > [共享变量](https://www.tensorflow.org/programmers_guide/variable_scope)
 - [张量](https://www.tensorflow.org/programmers_guide/dims_types)
 - [多线程和队列](https://www.tensorflow.org/programmers_guide/threading_and_queues)
