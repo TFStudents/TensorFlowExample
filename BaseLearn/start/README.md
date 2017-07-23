@@ -4,13 +4,93 @@
 #首先引入tensorflow 代码块是同一.py中
 import tensorflow as tf
 ```
- ## 张量tensor
-	> 什么是张量？张量相当于表,又有点类似于树    
-	> 0 维张量=标量 如12  shape[]  
-	> 1 维张量=向量:0维张量的向量 如[1,2,45,5] 类似python中的list,shape[4]  
-	> 2 维张量=1维张量的向量 如[[12,333,],[312323,23]] ,shape[2,2]   
-	> 3 维张量=2维张量的向量 ~~~   
-	> n维向量=n-1维张量的向量~~~
+## 张量
+> 符号 Tensor   
+
+### 阶 rank 
+> 类似于维度 
+>  什么是张量？张量相当于表,又有点类似于树    
+ <table >
+        <tr>
+        <th>阶数</th>
+        <th>维度</th>
+        <th>实际意义</th>
+        <th>举例</th>
+        </tr>
+        <tr>
+        <th>0</th>
+        <th>0维张量</th>
+        <th>标量</th>
+        <th>2</th>
+        </tr>
+         <tr>
+        <th>1</th>
+        <th>1维张量</th>
+        <th>向量</th>
+        <th>[1,2]</th>
+        </tr>
+         <tr>
+        <th>2</th>
+        <th>2维张量</th>
+        <th>矩阵</th>
+        <th>[[123,33],[232,21]]</th>
+        </tr>
+           <tr>
+        <th>3</th>
+        <th>3维张量</th>
+        <th>2维张量的向量</th>
+        <th>[[1,2],[123,33]],[[3,5],[7,9]]]</th>
+        </tr>
+        <tr>
+        <th>4</th>
+        <th>4维张量</th>
+        <th>3维张量的向量</th>
+        <th>~~~</th>
+        </tr>
+         <tr>
+        <th>5</th>
+        <th>5维张量</th>
+        <th>4维张量的向量</th>
+        <th>~~~</th>
+        </tr>
+         <tr>
+        <th>n</th>
+        <th>n维张量</th>
+        <th>n-1维张量的向量</th>
+        <th>~~~</th>
+        </tr>
+</table>
+ 
+  
+    
+### 形状 Shape 
+> 就是张量形状描述 ，长度是张量的阶数 
+<table>
+  <tr>
+        <th>阶</th>
+        <th>shape</th>
+        <th>举例</th>
+        </tr>
+  <tr>
+        <th>0</th>
+        <th>[]</th>
+        <th>shape[]</th>
+        </tr>
+  <tr>
+        <th>1</th>
+        <th>[D0]#D0是数据集</th>
+        <th>shape[233]#D0的个数</th>
+        </tr>
+   <tr>
+        <th>n</th>
+        <th>[D0,....,Dn-1]#D0是数据集</th>
+        <th>shape[D0,....,Dn-1]</th>
+        </tr>
+</table>
+
+### 数据类型 type
+> 支持所有python 支持的基础数据类型
+
 - 流图Graph 
 > 由一系列节点(node)汇聚而成的tf操作(option)
 
