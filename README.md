@@ -52,7 +52,7 @@
 - [图片识别](https://www.tensorflow.org/tutorials/image_recognition)
 - [迁移学习](https://www.tensorflow.org/tutorials/image_retraining)-[魏杨-认领]
 - 卷积神经网络-[魏杨-认领]
-	>  [创建](https://www.tensorflow.org/tutorials/layers) 
+	>  [创建](https://www.tensorflow.org/tutorials/layers)   
 	>  [高级](https://www.tensorflow.org/tutorials/deep_cnn)
 - [词的向量化](https://www.tensorflow.org/tutorials/word2vec)[聂彬-认领]
 - [循环神经网络](https://www.tensorflow.org/tutorials/recurrent)[聂彬-认领]  
