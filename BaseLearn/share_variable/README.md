@@ -1,5 +1,5 @@
 # 共享变量
-[/share_variable.py](/share_variable.py)
+[share_variable.py](./share_variable.py)
 ## 存在问题
 - 代码块 A
 ```
