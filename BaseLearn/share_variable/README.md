@@ -1,5 +1,5 @@
 # 共享变量
-这和共享单车有关系吗？？？？？ 
+[/share_variable.py](/share_variable.py)
 ## 存在问题
 - 代码块 A
 ```
@@ -124,7 +124,7 @@ variable_scope(
 )
 ```
 一般只传name值就可以了，作用就是为tf.get_variable做名字区分以及重用控制，当然还可以控制initializer   
-差不错这些内容就够用了 ，具体细节点击链接看看[本文参考地址](https://www.tensorflow.org/programmers_guide/variable_scope)
+差不多这些内容就够用了 ，具体细节点击链接看看[本文参考地址](https://www.tensorflow.org/programmers_guide/variable_scope)
 
-
+## end 
 
