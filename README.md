@@ -4,7 +4,7 @@
 - [安装](BaseLearn/install)
 - [简单上手](BaseLearn/start) 
 - 变量
-> [创建-初始化](BaseLearn/variable)  
+> [创建-初始化](BaseLearn/variable)    
 > [共享变量](BaseLearn/share_variable)  
 - [多线程和队列](BaseLearn/threads)
 - [数据读取](https://www.tensorflow.org/programmers_guide/reading_data)
