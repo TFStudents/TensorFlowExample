@@ -42,8 +42,8 @@ with tf.Session() as sess:
 ```
 
 ## 资源
-[参考地址]()   
-[n1.csv]()   
-[n2.csv]()   
-[本实例代码]()    
-![流程图]()
+[参考地址](https://www.tensorflow.org/programmers_guide/reading_data)   
+[n1.csv](n1.csv)   
+[n2.csv](n2.csv)   
+[本实例代码](read_data.py) 
+![流程图](read_data.png)
