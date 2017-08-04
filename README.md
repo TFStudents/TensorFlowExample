@@ -1,21 +1,8 @@
 # TF 目录框架
-> 以python为基础
-- 为什么学习tensorflow ?
-	> tensorflow背景介绍   
-	> 有什么用？tf是什么？谁在用tf？   
-	> 官网   
-	> 推荐书籍 网站   比较好的文档链接？
-- 环境
-	> 1.工具
-		>  python 版本，tensorflow版本   
-		>  编辑器 notepad++,sublime text 2/3,其他编辑器  
-	2. [安装 ](https://www.tensorflow.org/install/)       
-	3. 每个工具已经下载工具包扔一个连接 简述推荐理由   
-	4. 注意有什么坑
 ## 基础
 [参考资料](https://www.tensorflow.org/programmers_guide)
-
-- [简单上手](https://www.tensorflow.org/get_started/get_started)-[聂彬完成]   
+- [安装](BaseLearn/install)
+- [简单上手](BaseLearn/start)-[聂彬完成]    
 - 变量
 > [创建-初始化](https://www.tensorflow.org/programmers_guide/variables)-[聂彬完成]   
 > [共享变量](https://www.tensorflow.org/programmers_guide/variable_scope)-[聂彬完成]   
