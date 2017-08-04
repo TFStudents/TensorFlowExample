@@ -1,4 +1,5 @@
 # Tensorflow 基础教程
+> 项目由[Tensorflow学生会]管理更新，TF爱好者参与的开源项目
 ## 基础
 
 - [安装](BaseLearn/install)
