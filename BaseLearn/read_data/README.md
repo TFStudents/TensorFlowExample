@@ -46,4 +46,4 @@ with tf.Session() as sess:
 [n1.csv](n1.csv)   
 [n2.csv](n2.csv)   
 [本实例代码](read_data.py) 
-![流程图](read_data.png)
+![流程图](create_data.png)
