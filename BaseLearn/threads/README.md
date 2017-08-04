@@ -10,7 +10,7 @@
 > 协作者   
 > 帮助多线程的合理停止和异常处理   
 - 实例
-```
+```python
 import tensorflow as tf
 import threading
 import time
@@ -40,7 +40,7 @@ coord.join(threads) # wait util thread stop
 > 队列的执行者    
 > 创建一系列线程，在同一个队列中组织tensors的排队执行 
 - 实例 
-```
+```python
 #1 create Runner
 b =tf.constant(2,dtype=tf.float16,shape=[1])
 que=tf.RandomShuffleQueue(3,1,dtypes=[tf.float16],shapes=())#shapes一定要写 否则会报错 
