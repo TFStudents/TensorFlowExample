@@ -62,5 +62,5 @@ print("this request")
 coord.request_stop()
 coord.join(enqueue_threads)# wait thread to terminate
 ```
-![流程图](../../..Resource/thread_queque.png)
+![流程图](https://github.com/TFStudents/Tensorflow/blob/master/Resource/thread_queque.png)
 
