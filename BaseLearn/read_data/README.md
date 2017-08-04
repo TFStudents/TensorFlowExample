@@ -26,7 +26,7 @@ print("f=",features)
 
 - ## 读取内容 
 > 终于到了最关键的一步 前面都是准备工作 ，这才是真正的数据读取 用法也很简单   
-> 关键字:coordinater,线程 不懂的请参照[]()
+> 关键字:coordinater,线程 不懂的请参照[队列和线程](https://github.com/TFStudents/Tensorflow/tree/master/BaseLearn/threads)
 ```
 with tf.Session() as sess:
   # Start populating the filename queue.
