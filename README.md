@@ -1,12 +1,12 @@
 # TF 目录框架
 ## 基础
-[参考资料](https://www.tensorflow.org/programmers_guide)
+
 - [安装](BaseLearn/install)
-- [简单上手](BaseLearn/start)-[聂彬完成]    
+- [简单上手](BaseLearn/start) 
 - 变量
-> [创建-初始化](https://www.tensorflow.org/programmers_guide/variables)-[聂彬完成]   
-> [共享变量](https://www.tensorflow.org/programmers_guide/variable_scope)-[聂彬完成]   
-- [多线程和队列](https://www.tensorflow.org/programmers_guide/threading_and_queues)
+> [创建-初始化](BaseLearn/variable)  
+> [共享变量](BaseLearn/share_variable)  
+- [多线程和队列](BaseLearn/threads)
 - [数据读取](https://www.tensorflow.org/programmers_guide/reading_data)
 - [训练助手](https://www.tensorflow.org/programmers_guide/supervisor)
 - 调试
@@ -47,7 +47,9 @@
 - [深度学习](https://www.tensorflow.org/tutorials/wide_and_deep)-[王凯-认领]  
 - [Mandelbrot Set](https://www.tensorflow.org/tutorials/mandelbrot)-[王凯-认领]   	
 - [偏微分方程](https://www.tensorflow.org/tutorials/pdes)-[王凯-认领]
-## 其他
+
+
+[参考资料](https://www.tensorflow.org/programmers_guide)
 - 一个DNN的分类例子
 介绍内容：构造一个四层的DNN，用Python读取一份分类数据，并feed给DNN。一步步解析每一行代码，包括每一个变量，每一个函数
 - 一个CNN的分类例子（MNIST）
