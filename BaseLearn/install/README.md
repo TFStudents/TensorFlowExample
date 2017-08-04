@@ -13,3 +13,8 @@ PYTHON_PATH=E:\Tools\Python35\Scripts;E:\Tools\Python35
 - b.NameError: name 'core' is not defined
 - c.NameError: name 'python' is not defined
 #### bc重启命令好久好了!!
+
+## Mac 
+等待你的完成
+## Linux
+等待你的参与
