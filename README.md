@@ -7,7 +7,7 @@
 > [创建-初始化](BaseLearn/variable)    
 > [共享变量](BaseLearn/share_variable)  
 - [多线程和队列](BaseLearn/threads)
-- [数据读取](https://www.tensorflow.org/programmers_guide/reading_data)
+- [读取数据](BaseLearn/read_data)
 - [训练助手](https://www.tensorflow.org/programmers_guide/supervisor)
 - 调试
 > [Mnist为例](https://www.tensorflow.org/programmers_guide/debugger)  
