@@ -1,5 +1,4 @@
-# Tensorflow 基础教程
-> 由[Tensorflow学生会]管理更新，TF爱好者参与的开源项目
+# Tensorflow 基础及实例教程
 ## 基础
 
 - [安装](BaseLearn/install)
@@ -51,6 +50,7 @@
 
 
 [参考资料](https://www.tensorflow.org/programmers_guide)
+### 本项目为开源项目：由[Tensorflow学生会]管理更新，TF爱好者参与
 - 一个DNN的分类例子
 介绍内容：构造一个四层的DNN，用Python读取一份分类数据，并feed给DNN。一步步解析每一行代码，包括每一个变量，每一个函数
 - 一个CNN的分类例子（MNIST）
