@@ -1,14 +1,14 @@
 # 变量
 [源文件](./variable.py)   
 地址[tf.Variable](https://www.tensorflow.org/api_docs/python/tf/Variable) 
-```
+```Python
 #文件头先引入
 import tensorflow as tf
 ```
 
 ## 如何创建？ 
 - 构造函数
-```
+```Python
 __init__(
     initial_value=None,
     trainable=True,
@@ -24,12 +24,12 @@ __init__(
 ```
 从构造函数中可以看出，可以不传入任何参数，但是必须传入initial_value的值 不然会报错  
 其他值可以任意组合传入 如下
-```
+```Python
 v1=tf.Variable(0) 
 v2=tf.Variable("hello world")
 ```
 - 机器配置
-```
+```Python
 # 将变量设置到cpu 0
 with tf.device("/cpu:0"):
   v = tf.Variable(...)
@@ -42,7 +42,7 @@ with tf.device("/gpu:0"):
 ## 初始化
 创建变量之后，需调用tf.global_variables_initializer()进行初始化  
 才能进行调用 不然会报错的
-```
+```Python
 #初始化方式1
 init=tf.global_variables_initializer()#变量的初始化 初始化当前module所有的变量
 sess=tf.Session()
@@ -54,7 +54,7 @@ print(sess.run(v2.initialized_value()))#由于global_variables_initializer 其�
 print(v2)# Tensor("Variable_1/read:0", shape=(), dtype=int32)
 ```
 ## 保存及读取变量
-```
+```Python
 # 保存session
 saver=tf.train.Saver()
 saver.save(sess,"./save")
