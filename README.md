@@ -8,9 +8,9 @@
 > [共享变量](BaseLearn/share_variable)  
 - [多线程和队列](BaseLearn/threads)
 - [读取数据](BaseLearn/read_data)
-- [训练助手](https://www.tensorflow.org/programmers_guide/supervisor)
+- [训练助手](Baselearn/Supervisor)
 - 调试
-> [Mnist为例](https://www.tensorflow.org/programmers_guide/debugger)  
+> [Mnist为例](https://www.tensorflow.org/programmers_guide/debugger)-[未完]  
 > [机器学习为例](https://www.tensorflow.org/programmers_guide/tfdbg-tflearn)
 - [元图](https://www.tensorflow.org/programmers_guide/meta_graph)
 - [保存模型](https://www.tensorflow.org/programmers_guide/saved_model_cli)
