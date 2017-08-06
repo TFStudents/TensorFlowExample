@@ -2,17 +2,37 @@
 
 图片识别用于识别图片属于哪一类物体,本质是图片的分类问题(机器学习主要用于两方面,回归和分类),此处以MNIST为例以数字识别介绍图片识别.
 
-## 环境
+## 1. 环境
 python 2.7
 tensorflow 1.2.1
 
-## 程序说明
+## 2. 程序说明
 程序使用 tensorflow branch r1.2 中的https://github.com/tensorflow/tensorflow/blob/r1.2/tensorflow/examples/learn/mnist.py
 
 $ ./minst.py
 本程序采用两种方式进行训练,一种为LinearClassifier,另一种为cnn,其中cnn有进行两层卷积,下面进行详细说明.
 
-### 池化层
+### 2.1 LinearClassifier
+```
+feature_columns = learn.infer_real_valued_columns_from_input(
+      mnist.train.images)
+  classifier = learn.LinearClassifier(
+      feature_columns=feature_columns, n_classes=10)
+  classifier.fit(mnist.train.images,
+                 mnist.train.labels.astype(np.int32),
+                 batch_size=100,
+                 steps=1000)
+  score = metrics.accuracy_score(mnist.test.labels,
+                                 list(classifier.predict(mnist.test.images)))
+  print('Accuracy: {0:f}'.format(score))
+```
+LinearClassifier较易理解,不进一步说明
+
+### 2.2 cnn
+
+cnn 部分主要包括卷积层,池化层和全连接层,详细介绍如下:
+
+#### 2.2.1 池化层
 ```
 def max_pool_2x2(tensor_in):
   return tf.nn.max_pool(
@@ -21,7 +41,7 @@ def max_pool_2x2(tensor_in):
 
 池化使用过滤器为大小为2*2, 使用max_pooling,长和宽的步长均为2,padding方式为'SAME',所以池化后图片大小变为原来的一半.
 
-## 卷基层
+#### 2.2.2 卷积层
 ```
 def conv_model(feature, target, mode):
   """2-layer convolution model."""
@@ -74,8 +94,21 @@ def conv_model(feature, target, mode):
 * 在两层卷积和池化后加一个全连接层,全连接层使用1024核.
 * 在全连接后使用softmax进行分类
 
-# 运行结果
+#### 2.2.3 cnn调用
+```
+### Convolutional network
+  classifier = learn.Estimator(model_fn=conv_model)
+  classifier.fit(mnist.train.images,
+                 mnist.train.labels,
+                 batch_size=100,
+                 steps=20000)
+  score = metrics.accuracy_score(mnist.test.labels,
+                                 list(classifier.predict(mnist.test.images)))
+  print('Accuracy: {0:f}'.format(score))
+```
+
+### 2.3 运行结果
 LinearClassifier方法在测试集上正确率为0.921600,cnn在测试集上正确率为0.967500
 
 
-__以上为个人理解,如有错误请指正,感谢!!!__
+__<font color=red size=72>以上为个人理解,如有错误请指正,感谢!!!</font>__
