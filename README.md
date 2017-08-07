@@ -34,7 +34,7 @@
 > [直方图](https://www.tensorflow.org/get_started/tensorboard_histograms)
 ## 算法相关
 - [GPU的使用](https://www.tensorflow.org/tutorials/using_gpu)[聂彬-认领]
-- [图片识别](https://www.tensorflow.org/tutorials/image_recognition)[张夏旭-认领]   
+- [图片识别](./PicClassify)[张夏旭-认领]-完成     
 - [迁移学习](https://www.tensorflow.org/tutorials/image_retraining)-[魏杨-认领]
 - 卷积神经网络-[魏杨-认领]
 	>  [创建](https://www.tensorflow.org/tutorials/layers)   
