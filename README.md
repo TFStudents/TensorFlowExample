@@ -9,14 +9,15 @@
 - [多线程和队列](BaseLearn/threads)
 - [读取数据](BaseLearn/read_data)
 - [训练助手](Baselearn/Supervisor)
+- [TensorBoard的使用](Baselearn/tensorboard)
 - 调试
-> [Mnist为例](https://www.tensorflow.org/programmers_guide/debugger)-[未完]    
+> [Mnist为例](https://www.tensorflow.org/programmers_guide/debugger)-[未完]      
 > [机器学习为例](https://www.tensorflow.org/programmers_guide/tfdbg-tflearn)
 - [元图](https://www.tensorflow.org/programmers_guide/meta_graph)
 - [保存模型](https://www.tensorflow.org/programmers_guide/saved_model_cli)
 - [版本解释](https://www.tensorflow.org/programmers_guide/version_semantics)
 - [数据版本](https://www.tensorflow.org/programmers_guide/data_versions)
-- [常见问题](https://www.tensorflow.org/programmers_guide/faq)
+
 ## 初级实例
 [参考资料](https://www.tensorflow.org/get_started)
 > ### 跑实例时 一步步解析每一行代码，包括每一个变量，每一个函数 每一步的运行结果写在后面注释里面 
