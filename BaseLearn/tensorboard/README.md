@@ -16,7 +16,7 @@ with tf.Session() as sess:
     writer = tf.summary.FileWriter("test_1", sess.graph)
 
 ```
-[生成文件](./test_1)
+[生成文件](./test_1)   
 2. 显示
 > 利用1生成的文件，将视图关系显示出来，在命令行中输入
 ```
