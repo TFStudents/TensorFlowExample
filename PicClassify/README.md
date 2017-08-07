@@ -13,7 +13,7 @@ $ ./minst.py
 本程序采用两种方式进行训练,一种为LinearClassifier,另一种为cnn,其中cnn有进行两层卷积,下面进行详细说明.
 
 ### 2.1 LinearClassifier
-```
+```python
 feature_columns = learn.infer_real_valued_columns_from_input(
       mnist.train.images)
   classifier = learn.LinearClassifier(
@@ -33,7 +33,7 @@ LinearClassifier较易理解,不进一步说明
 cnn 部分主要包括卷积层,池化层和全连接层,详细介绍如下:
 
 #### 2.2.1 池化层
-```
+```python
 def max_pool_2x2(tensor_in):
   return tf.nn.max_pool(
       tensor_in, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
@@ -42,7 +42,7 @@ def max_pool_2x2(tensor_in):
 池化使用过滤器为大小为2*2, 使用max_pooling,长和宽的步长均为2,padding方式为'SAME',所以池化后图片大小变为原来的一半.
 
 #### 2.2.2 卷积层
-```
+```python
 def conv_model(feature, target, mode):
   """2-layer convolution model."""
   # Convert the target to a one-hot tensor of shape (batch_size, 10) and
@@ -95,7 +95,7 @@ def conv_model(feature, target, mode):
 * 在全连接后使用softmax进行分类
 
 #### 2.2.3 cnn调用
-```
+```python
 ### Convolutional network
   classifier = learn.Estimator(model_fn=conv_model)
   classifier.fit(mnist.train.images,
