@@ -20,7 +20,7 @@
 ## 初级实例
 [参考资料](https://www.tensorflow.org/get_started)
 > ### 跑实例时 一步步解析每一行代码，包括每一个变量，每一个函数 每一步的运行结果写在后面注释里面 
-- [mnist新手](https://www.tensorflow.org/get_started/mnist/beginners)
+- [mnist新手](./PicClassify)
 - [mnist专家](https://www.tensorflow.org/get_started/mnist/pros)
 - [神经网络](https://www.tensorflow.org/get_started/mnist/mechanics)
 - 机器学习
