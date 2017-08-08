@@ -21,13 +21,13 @@ Mandelbrot set是一个复数点c的集合，任取复平面上的一个点c，�
 
 导入仿真计算的库
 
-```
+```python
 import tensorflow as tf
 import numpy as np
 ```
 
 导入可视化的库
-```
+```python
 import PIL.Image
 from io import BytesIO
 from IPython.display import Image, display
@@ -35,7 +35,7 @@ from IPython.display import Image, display
 
 ### 定义一个可视化函数
 
-```
+```python 
 def DisplayFractal(a, fmt='jpeg'):
   a_cyclic = (6.28*a/20.0).reshape(list(a.shape)+[1])
   img = np.concatenate([10+20*np.cos(a_cyclic),
@@ -52,7 +52,7 @@ def DisplayFractal(a, fmt='jpeg'):
 
 ### 使用tensorflow进行一些数学计算
 
-```
+```python 
 sess = tf.InteractiveSession() # 打开一个交互式的session，在这个session下进行计算
 
 Y, X = np.mgrid[-1.3:1.3:0.005, -2:1:0.005] # 创建复平面上点的横纵坐标
@@ -80,7 +80,7 @@ step = tf.group(
 
 ### 可视化结果
 
-```
+```python
 DisplayFractal(ns.eval()) # 以上代码在ipython中运行时，并未出现可视化的图片。在jupyter notebook中，出现可视化的结果。
 ```
 ![](https://www.tensorflow.org/images/mandelbrot_output.jpg)
