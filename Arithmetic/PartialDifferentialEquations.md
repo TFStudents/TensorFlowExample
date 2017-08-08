@@ -12,7 +12,7 @@ TensorFlow不仅仅用于机器学习。在这部分，给出一个使用TensorF
 ## 建立基础
 
 导入一些库
-```
+```python
 # 导入用于仿真的库
 import tensorflow as tf
 import numpy as np
@@ -38,7 +38,7 @@ def DisplayArray(a, fmt='jpeg', rng=[0,1]):
 
 ## 便于计算的函数
 
-```
+```python 
 def make_kernel(a):
   """转换一个2维数组成一个卷积核"""
   a = np.asarray(a)
@@ -65,7 +65,7 @@ def laplace(x):
 ## 定义概率密度函数
 
 假设池塘的尺寸为N*N，N=500。
-```
+```python 
 # 池塘的初始状态，初始化为0
 u_init = np.zeros([N, N], dtype=np.float32)
 ut_init = np.zeros([N, N], dtype=np.float32)
@@ -77,7 +77,7 @@ for n in range(40):
 DisplayArray(u_init, rng=[-0.1, 0.1])
 ```
 接下来，定义微分方程。
-```
+```python 
 # 参数
 # eps -- time resolution
 # damping -- wave damping
@@ -96,7 +96,7 @@ step = tf.group(
 ```
 
 ## 运行仿真
-```
+```python 
 # 初始化所有变量
 tf.global_variables_initializer().run()
 # 概率密度函数，运行1000次，每一次都输出一个池塘的表面状态结果
@@ -110,7 +110,3 @@ for i in range(1000):
 参考文献：
 [1]
 [tf中几种卷积的介绍](http://qiita.com/YusukeSuzuki@github/items/0764d15b9d0b97ec1e16)
-
-
-
-(https://jbt.github.io/markdown-editor/#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)
