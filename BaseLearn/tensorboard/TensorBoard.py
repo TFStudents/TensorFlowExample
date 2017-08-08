@@ -6,6 +6,5 @@ node=tf.add(node1,node2)
 print(node1)
 with tf.Session() as sess:
     print(sess.run(node))
-    tf.summary.merge_all
     tf.global_variables_initializer().run()
     writer = tf.summary.FileWriter("test_1", sess.graph)
