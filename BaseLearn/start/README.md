@@ -1,6 +1,6 @@
 # 快速入门
 [源码-start.py](./start.py)
-```
+```python
 #首先引入tensorflow 代码块是同一.py中
 import tensorflow as tf
 ```
@@ -98,7 +98,7 @@ import tensorflow as tf
 方法[tf.constant](https://www.tensorflow.org/api_docs/python/tf/constant)
 
 - 构造函数
-```
+```python
 constant(
     value,
     dtype=None,
@@ -109,7 +109,7 @@ constant(
 ```
 
 - 举例
-```
+```python
 node1= tf.constant([True,True])
 node2= tf.constant(12)
 node3=tf.constant("hello")
@@ -130,7 +130,7 @@ print(sess.run(node4))#打印b'world'
 [更多数学运算](https://www.tensorflow.org/api_guides/python/math_ops#Arithmetic_Operators)
 
 - 构造函数
-```
+```python
 add(
     x,
     y,
@@ -139,7 +139,7 @@ add(
 ```
 
 - 举例
-```
+```python
 node5=tf.constant(-1)
 n_add=tf.add(node2,node5)
 print(sess.run(n_add))#打印11
@@ -152,7 +152,7 @@ print(sess.run(n_add2))#打印-3 说明两种形式的加法也可以的
 方法[tf.placeholder](https://www.tensorflow.org/api_docs/python/tf/placeholder)  
 相当于数学函数的右侧的变量
 构造函数
-```
+```python
 placeholder(
     dtype,
     shape=None,
@@ -160,7 +160,7 @@ placeholder(
 )
 ```	
 例子
-```
+```python
 p1=tf.placeholder(tf.float32)
 p2=tf.placeholder(tf.float32)
 n_add3=p1+p2
@@ -174,7 +174,7 @@ print(sess.run(n_add3,{p1:23,p2:32}))#用法正确 打印55.0
 [tf.Variable](https://www.tensorflow.org/api_docs/python/tf/Variable)
 
 - 构造函数
-```
+```python
 __init__(
     initial_value=None,
     trainable=True,
@@ -190,7 +190,7 @@ __init__(
 ```
 
 - 实例
-```
+```python
 v1=tf.Variable(12)
 v2=tf.Variable(23)#定义一个变量
 init = tf.global_variables_initializer()#进去全部变量的初始化
