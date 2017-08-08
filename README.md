@@ -9,7 +9,9 @@
 - [多线程和队列](BaseLearn/threads)
 - [读取数据](BaseLearn/read_data)
 - [训练助手](BaseLearn/Supervisor)
-- [TensorBoard的使用](BaseLearn/tensorboard)
+- TensorBoard的使用
+> 1. [显示graph](BaseLearn/tensorboard) 
+> 2. [显示图片](BaseLearn/tensorboard_image)
 - 调试
 > [Mnist为例](https://www.tensorflow.org/programmers_guide/debugger)-[未完]      
 > [机器学习为例](https://www.tensorflow.org/programmers_guide/tfdbg-tflearn)
