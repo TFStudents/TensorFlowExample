@@ -1,5 +1,5 @@
 # Tensorboard显示图片
-基本使用我们会了，那现在来看看怎么使用图片吧。     
+基本使用我们会了，那现在来看看怎么使用图片吧。     
 [实例代码](./SummaryImage.py)    
 完全不会用-[请点击这里](../tensorboard) 
 ![图片资源](./start_person.jpg)      
