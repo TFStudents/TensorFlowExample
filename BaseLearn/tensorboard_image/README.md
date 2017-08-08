@@ -1,5 +1,6 @@
 # Tensorboard显示图片
-基本使用我们会了，那现在来看看怎么使用图片吧。
+基本使用我们会了，那现在来看看怎么使用图片吧。  
+完全不会用-[请点击这里](../tensorboard)
 ![图片资源](./start_person.jpg)
 ### 1. 读取图片
 
@@ -38,7 +39,9 @@ with tf.Session() as sess:
 ```
 [生成文件](./test_2)
 ### 4. 在Tensorboard中显示
-在命令行，输入如下命令，在浏览器中查看。[参考](../tensorboard)
+在命令行，输入如下命令，在浏览器中输入类似[http://192.168.56.1:6006/]查看。[参考](../tensorboard)
 ```
 tensorboard --logdir="./test_2"
 ```
+### 5. 结果
+![结果](./sum_image.png)
