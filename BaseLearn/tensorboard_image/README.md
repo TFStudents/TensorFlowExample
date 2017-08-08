@@ -11,16 +11,6 @@
     file = open(image_filename, 'rb')
     data = file.read()
     file.close()
-    # ---
-    file_img = tf.image.decode_jpeg(data,channels=4)  
-    file_img=tf.expand_dims(file_img,0)
-    with tf.Session() as sess:
-        init_op = tf.global_variables_initializer()
-        sess.run(init_op)
-        write = tf.summary.FileWriter("./test_2", graph=sess.graph)
-        img = tf.summary.image("./", tensor=file_img)
-        img_string = sess.run(img)
-        write.add_summary(img_string)
 ```
 ### 2. 解析图片
 解析图片，并转换为Tensor,这一步很关键，注意这里加一维
