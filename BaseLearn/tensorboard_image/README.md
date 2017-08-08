@@ -30,7 +30,8 @@ with tf.Session() as sess:
 ```
 [生成文件](./test_2)
 ### 4. 在Tensorboard中显示
-在命令行，输入如下命令，在浏览器中输入类似[http://192.168.56.1:6006/]查看。[参考](../tensorboard)
+在命令行，输入如下命令，在浏览器中输入类http://192.168.56.1:6006 类似   地址进行查看   
+[参考](../tensorboard)
 ```
 tensorboard --logdir="./test_2"
 ```
