@@ -22,6 +22,7 @@ with tf.Session() as sess:
 ```
 tensorboard --logdir="./test_1" #这是文件的路径
 ```
+[运行时可能错误 由于 html5lib 版本问题，可以在anaconda中进行降版本解决此问题](https://github.com/tensorflow/tensorboard/pull/589)
 
 3. 在浏览器中打开
 >  在浏览器中输入：http://192.168.56.1:6006 ，这是自己的电脑IP：6006是端口号    
