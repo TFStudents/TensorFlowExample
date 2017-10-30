@@ -61,6 +61,8 @@ if __name__ == '__main__':
   W = tf.Variable(tf.zeros([784, 10]))
   b = tf.Variable(tf.zeros([10]))
   y = tf.matmul(x, W) + b #线性方程
+  
+  y_ = tf.placeholder(tf.float32, [None, 10])# 占位符
 ```
 你可以理解为平面中的直线方程,只是这里是多维的。机器学习的目标就是找到这一个一组参数来描述我们的数字特征。  
 为什么这里是784？是因为我们的输入28x28=784的像素。   
@@ -71,4 +73,11 @@ x与W相乘会得到一个 与b一样的长度的一维向量。【None代表可
 [感知机](https://hit-scir.gitbooks.io/neural-networks-and-deep-learning-zh_cn/content/chap1/c1s1.html)和 
 [sigmoid神经元](https://hit-scir.gitbooks.io/neural-networks-and-deep-learning-zh_cn/content/chap1/c1s2.html)  
 看完后你可能就会对这个方程有很深的认识。
- 
+
+- ### 错误的评估之交叉熵
+```
+  cross_entropy = tf.reduce_mean(
+      tf.nn.softmax_cross_entropy_with_logits(labels=y_, logits=y))
+  train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
+```
+y_是数据集中已经确定的数，y是评估模型，就是目标函数，是一个表达式，cross_entropy是交叉熵，用来评估错误率，这个值越小，代表错误率越低.
