@@ -40,7 +40,7 @@ def main(_):
   x = tf.placeholder(tf.float32, [None, 784])
   W = tf.Variable(tf.zeros([784, 10]))
   b = tf.Variable(tf.zeros([10]))
-  y = tf.matmul(x, W) + b
+  y = tf.matmul(x, W) + b #
 
   # Define loss and optimizer
   y_ = tf.placeholder(tf.float32, [None, 10])
@@ -70,6 +70,7 @@ def main(_):
   accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
   print(sess.run(accuracy, feed_dict={x: mnist.test.images,
                                       y_: mnist.test.labels}))
+  writer = tf.summary.FileWriter("test_1", sess.graph)
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
